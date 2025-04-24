@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    background-image: url(./img/flat-lay-medical-desk-composition-with-copy-space.jpg);
+    background-size: cover;  /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-attachment: fixed; /* Fondo fijo */
+}
+
+h1 {
+    color: #333;
+    text-align: center;  /* Centra el título */
+}
+
+/* Estilo del formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.85);  /* Fondo blanco translúcido para mejorar la visibilidad */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto; /* Centra el formulario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos de los campos de entrada */
+input[type="text"],
+input[type="number"],
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    max-width: 1000px;  /* Impide que la tabla se estire más de lo necesario */
+    margin: 20px auto;  /* Centra la tabla en la página */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;  /* Aumenta el área clickeable */
+    border-radius: 4px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;  /* Menos padding en dispositivos pequeños */
+    }
+
+    .table {
+        font-size: 12px;  /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .table th, .table td {
+        padding: 8px;  /* Reducir el padding */
+    }
+
+    .btn {
+        font-size: 12px;  /* Hacer los botones más pequeños en pantallas pequeñas */
+        padding: 4px 8px;
+    }
+
+    form {
+        max-width: 100%;  /* El formulario ocupa todo el ancho disponible en móviles */
+    }
+}
+
+/* Media Queries para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .table {
+        font-size: 14px;  /* Ajustar tamaño de fuente en tabletas */
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    form {
+        max-width: 80%;  /* El formulario tiene un ancho limitado en tabletas */
+    }
+}
+
+/* Media Queries para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    .table {
+        font-size: 16px;  /* Tamaño de fuente mayor en pantallas grandes */
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
